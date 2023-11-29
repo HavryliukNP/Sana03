@@ -30,5 +30,37 @@ namespace Task1
             }
             return sum;
         }
-    }
+        public static int SearchMinElement(int[] array)
+        {
+            int minElement = array[0];
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] < minElement)
+                    minElement = array[i];
+            }
+            return minElement;
+
+        }
+        public static int SearchIndexMaxElement(int[] array)
+        {
+            int maxElement = array[0];
+            int index = 0;
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] > maxElement)
+                    index = i;
+            }
+            return index;
+        }
+        public static int MaxFabsElement(int[] array)
+        {
+            int maxElement = Math.Fabs
+            int index = 0;
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] > maxElement)
+                    index = i;
+            }
+            return index;
+        }
 }

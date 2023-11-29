@@ -11,3 +11,9 @@ for (int i = 0; i < myArray.Length; i++)
 
 int sum = Matrix.SumOfNegativeElements(myArray);
 Console.WriteLine($"Sum of negative elements = {sum}");
+
+int minElement = Matrix.SearchMinElement(myArray);
+Console.WriteLine($"Minimal element = {minElement}");
+
+int indexMaxElement = Matrix.SearchIndexMaxElement(myArray);
+Console.WriteLine($"Index of maximum element = {indexMaxElement}");
